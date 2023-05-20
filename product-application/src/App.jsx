@@ -15,7 +15,7 @@ const App = () => {
     <div className="container">
       <Suspense fallback={<div>Loading..</div>}>
         <SafeComponent>
-          <Header />
+          <Header app={{name: 'Product Application'}} />
         </SafeComponent>
       </Suspense>
       <Routes>

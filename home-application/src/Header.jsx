@@ -1,6 +1,6 @@
 import React from "react";
 
-const Header = () => {
+const Header = ({app}) => {
   return (
     <div
       style={{
@@ -12,7 +12,7 @@ const Header = () => {
         marginBottom: 10
       }}
     >
-      Brand Logo
+      Dream Cars | {app.name}
     </div>
   );
 };

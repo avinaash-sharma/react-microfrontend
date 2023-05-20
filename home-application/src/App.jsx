@@ -2,14 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Footer from "./Footer";
 import Header from "./Header";
+import HomeContent from "./HomeContent";
 
 import "./index.css";
 
 const App = () => (
   <div className="container">
-    <Header />
+    <Header app={{name: 'Home'}}/>
     <div>
-      Home Page
+      <HomeContent />
     </div>
     <Footer />
   </div>
